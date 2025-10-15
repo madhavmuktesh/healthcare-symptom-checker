@@ -8,7 +8,9 @@
 
 An educational tool that leverages the Google Gemini Large Language Model (LLM) to suggest possible conditions and recommendations based on user-provided symptoms. This project was developed as a full-stack application for an assignment with **Unthinkable Solutions**.
 
-**Demo Video:** `https://drive.google.com/file/d/1QoVNRy1-HHXT1fQQmsxhaW-srY0EWjir/view?usp=sharing`
+**Demo Video:** 
+
+https://github.com/user-attachments/assets/2245c4ab-c6a1-4ddc-a99a-695ebf1dfe63
 
 ---
 ## Key Features
@@ -67,6 +69,7 @@ History Page
 To run this project locally, you will need Node.js and a MongoDB Atlas account.
 
 ### Backend
+
 
 1.  **Navigate to the backend folder:**
     ```bash
