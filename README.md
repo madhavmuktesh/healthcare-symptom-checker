@@ -40,9 +40,9 @@ An educational tool that leverages the Google Gemini Large Language Model (LLM) 
 
 | Login Page                               | Analyze Page                               | History Page                               |
 | ---------------------------------------- | ------------------------------------------ | ------------------------------------------ |
-| `<img width="725" height="780" alt="image" src="https://github.com/user-attachments/assets/a5ab679c-f471-4f36-90fa-ed46dc76f492" />
-`              | `<img width="579" height="895" alt="image" src="https://github.com/user-attachments/assets/4b7b7b23-8cef-4c93-8c97-cd0ff5dd9c7b" />
-`              | `<img width="960" height="779" alt="image" src="https://github.com/user-attachments/assets/eb540d04-04ee-4167-9909-ef096e9ce020" />
+| `<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/a5ab679c-f471-4f36-90fa-ed46dc76f492" />
+`              | `<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/4b7b7b23-8cef-4c93-8c97-cd0ff5dd9c7b" />
+`              | `<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/eb540d04-04ee-4167-9909-ef096e9ce020" />
 `              |
 
 ---
