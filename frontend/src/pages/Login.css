@@ -1,0 +1,358 @@
+/* Define CSS Variables for colors and styles for reusability */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base body and wrapper styles */
+.login-wrapper {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.login-container {
+    max-width: 28rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+/* Header and Logo */
+.header-section {
+    text-align: center;
+}
+
+.logo-container {
+    background-color: var(--color-white);
+    padding: 1rem;
+    border-radius: 9999px;
+    box-shadow: var(--shadow-lg);
+    display: inline-flex;
+    margin-bottom: 1.5rem;
+}
+
+.header-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 0.5rem;
+}
+
+.header-subtitle {
+    color: var(--color-blue-100);
+    font-size: 0.875rem;
+}
+
+/* Form container */
+.form-wrapper {
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-2xl);
+    padding: 2rem;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.form-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-gray-800);
+    margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+    color: var(--color-gray-600);
+    font-size: 0.875rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Input fields and icons */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-gray-700);
+}
+
+.input-group .relative {
+    position: relative;
+}
+
+.input-group input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem; /* Left padding for icon */
+    border: 1px solid var(--color-gray-300);
+    border-radius: 0.5rem;
+    transition: box-shadow 0.2s;
+}
+
+.input-group input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-blue-500);
+    border-color: transparent;
+}
+
+.input-icon-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 0.75rem;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.input-icon-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-right: 0.75rem;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Form options (Remember me / Forgot password) */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.remember-me input {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 0.25rem;
+    color: var(--color-blue-600);
+}
+
+.forgot-password, .signup-link a {
+    font-weight: 500;
+    color: var(--color-blue-600);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.forgot-password:hover, .signup-link a:hover {
+    color: var(--color-blue-500);
+}
+
+/* Buttons and Links */
+.login-button {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border: 1px solid transparent;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    color: var(--color-white);
+    background-color: var(--color-blue-600);
+    transition: background-color 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: var(--color-blue-700);
+    transform: scale(1.05);
+}
+
+.login-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-white), 0 0 0 4px var(--color-blue-500);
+}
+
+.login-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.login-button .button-icon {
+    position: absolute;
+    left: 0.75rem;
+}
+
+.signup-link {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+}
+
+/* Disclaimer and Success Message */
+.disclaimer {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--color-yellow-50);
+    border-left: 4px solid var(--color-yellow-400);
+    border-radius: 0 0.5rem 0.5rem 0;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.disclaimer p {
+    font-size: 0.875rem;
+    color: var(--color-yellow-700);
+}
+
+.success-message {
+    background-color: #d1fae5;
+    border: 1px solid #6ee7b7;
+    color: #065f46;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    right: 0;
+}
+
+/* Animations */
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+.slide-in {
+    animation: slideIn 0.6s ease-out;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Input with icon positioning */
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    color: #64748b;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.icon-input {
+    padding-left: 40px;
+    width: 100%;
+}
+
+.password-input {
+    padding-right: 40px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #64748b;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.password-toggle:hover {
+    color: #334155;
+}
+
+/* Button icon styling */
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-icon {
+    display: inline-flex;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Disclaimer styling */
+.disclaimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background: #f0fdf4;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: #166534;
+}
+
+/* Logo section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+
+.logo-icon {
+    color: #3b82f6;
+}

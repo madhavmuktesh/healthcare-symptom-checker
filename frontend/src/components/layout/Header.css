@@ -1,0 +1,70 @@
+.main-header {
+  background-color: var(--white);
+  box-shadow: var(--shadow-subtle);
+  padding: 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+  flex-shrink: 0; /* Prevents the logo from shrinking */
+}
+
+.main-header nav {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing-unit) * 3);
+  flex-grow: 1; /* Allows the nav to fill the remaining space */
+  justify-content: flex-end; /* Pushes all items to the right */
+}
+
+.main-header nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.2s;
+  white-space: nowrap; /* Prevents links from wrapping */
+}
+
+.main-header nav a:hover {
+  color: var(--primary-color);
+}
+
+.user-greeting {
+  color: #475569; /* Muted text color */
+  font-size: 0.9rem;
+  margin-right: auto; /* This is the magic that pushes everything else to the right */
+  white-space: nowrap;
+}
+
+.btn-login {
+  background-color: var(--secondary-color);
+  color: var(--white) !important;
+  padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
+  border-radius: var(--border-radius-sm);
+}
+
+.btn-logout {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--font-body);
+}
+
+.btn-logout:hover {
+  color: var(--primary-color);
+}
