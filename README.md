@@ -8,7 +8,6 @@
 
 An educational tool that leverages the Google Gemini Large Language Model (LLM) to suggest possible conditions and recommendations based on user-provided symptoms. This project was developed as a full-stack application for an assignment with **Unthinkable Solutions**.
 
-**Live Demo:** `[LINK TO YOUR DEPLOYED VERCEL/NETLIFY URL]`
 **Demo Video:** `[LINK TO YOUR YOUTUBE/LOOM VIDEO]`
 
 ---
