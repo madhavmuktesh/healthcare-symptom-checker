@@ -39,12 +39,15 @@ An educational tool that leverages the Google Gemini Large Language Model (LLM) 
 *Put your screenshots here. A table format looks clean.*
 
 Login Page
+
 <img src="https://github.com/user-attachments/assets/a5ab679c-f471-4f36-90fa-ed46dc76f492" width="300" height="420" />
 
 Analyze Page
+
 <img src="https://github.com/user-attachments/assets/4b7b7b23-8cef-4c93-8c97-cd0ff5dd9c7b" width="300" height="420" />
 
 History Page
+
 <img src="https://github.com/user-attachments/assets/eb540d04-04ee-4167-9909-ef096e9ce020" width="300" height="420" />
 
 ---
