@@ -2,7 +2,7 @@
 
 // 1. Load environment variables at the very top
 require('dotenv').config();
-
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose'); // 2. Import Mongoose
@@ -23,6 +23,11 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api', analysisRoutes);
 app.use('/api/history', historyRoutes);
+
+app.use(express.static(path.join(__dirname, 'frontend/dist')));
+app.get(/^(?!\/api).*/, (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend/dist', 'index.html'));
+});
 
 // --- Health Check & Root ---
 app.get('/health', (req, res) => res.json({ status: 'Server is running' }));
